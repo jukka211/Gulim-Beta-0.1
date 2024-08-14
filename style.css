@@ -1,0 +1,22 @@
+body {
+    background-color: rgb(20, 20, 20);
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    min-height: 100vh;
+}
+
+.image {
+    width: 40vmin;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.image[data-status="inactive"] {
+    display: block;
+}
+
+.image[data-status="active"] {
+    display: block;
+}
+

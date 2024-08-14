@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trailing photos!</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+    <style>
+        @font-face {
+    font-family:Beth-Ellen;
+    src: url("Beth-Ellen-2.0.otf");
+  }
+
+
+
+        body {
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    min-height: 100vh;
+    cursor: url('1-02.png'), url('1-02.png') 32 32, auto;
+}
+
+
+
+.image {
+    width: 50vmin;
+    position: absolute;
+  
+    transform: translate(-50%, -50%) scale(0.3);
+ 
+   
+}
+
+.image[data-status="inactive"] {
+    display: none;
+    
+}
+
+.image[data-status="active"] {
+    display: block;
+    
+}
+
+img {
+    mix-blend-mode:normal;
+}
+
+
+
+.top, .bottom {
+    font-family:Beth-Ellen;
+    font-size: 20px;
+    line-height: 20px;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    z-index: 999;
+    cursor: url('1-01.svg')32 32, auto;
+}
+.gulim {
+    user-select: none;
+}
+.top {
+    top:14px;
+    user-select: none;
+}
+.bottom {
+    bottom:14px;
+    display: inline-block;
+}
+.about, .what, .shop {
+    display: inline-block;
+    
+    padding:5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+ 
+}
+
+.bottom img:hover {
+    scale:1.2;
+}
+
+.bottom a:hover {
+    text-decoration: none;
+ 
+   
+  }
+  .bottom a {
+    font-family:Beth-Ellen;
+  }
+  .what:hover {
+ rotate: -7deg;
+
+  }
+  .about:hover {
+ rotate: 7deg;
+  }
+  .shop:hover {
+ rotate: -7deg;
+  }
+  .what, .about, .shop {
+    transition: all 200ms ease-in-out;
+    cursor: url('1-01.svg')32 32, auto;
+
+  }
+a {
+    user-select: none;
+    text-decoration: none;
+    color:black;
+    cursor: url('1-01.png')32 32, auto;
+}
+
+    </style>
+</head>
+<body>
+    <img src="images/pic1.jpg" data-index="0" data-status="inactive" class="image">
+    <img src="images/pic2.jpg" data-index="1" data-status="inactive" class="image">
+    <img src="images/pic3.jpg" data-index="2" data-status="inactive" class="image">
+    <img src="images/pic4.jpg" data-index="3" data-status="inactive" class="image">
+    <img src="images/pic5.jpg" data-index="4" data-status="inactive" class="image">
+    <img src="images/pic6.jpg" data-index="5" data-status="inactive" class="image">
+    <img src="images/pic7.jpg" data-index="6" data-status="inactive" class="image">
+    <img src="images/pic1.jpg" data-index="7" data-status="inactive" class="image">
+    <img src="images/pic8.gif" data-index="8" data-status="inactive" class="image">
+    <img src="images/pic10.jpg" data-index="9" data-status="inactive" class="image">
+    <img src="images/pic11.png" data-index="10" data-status="inactive" class="image">
+    <img src="images/pic12.png" data-index="11" data-status="inactive" class="image">
+    <img src="images/pic13.jpg" data-index="12" data-status="inactive" class="image">
+    <img src="images/pic14.jpg" data-index="13" data-status="inactive" class="image">
+    <img src="images/pic15.png" data-index="14" data-status="inactive" class="image">
+  
+
+    <div class="top"><div class="gulim"><a href="index.html">gulim askar</a></div></div>
+	<div class="bottom"><div class="what"><a href="https://www.instagram.com/gulim.art/" ><img style="width:130px;" src="what's on.svg" alt=""/></a></div>
+	<div class="about"><a href="https://www.instagram.com/gulim.art/" ><img style="width:120px;" src="about.svg" alt=""/></a></div>
+	<div class="shop"><a href="https://www.instagram.com/gulim.art/" ><img style="width:65px;"  src="shop.svg" alt=""/></a></div>
+</body>
+</html>
